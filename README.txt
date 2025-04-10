@@ -14,9 +14,9 @@ Repository Structure:
    - Implements a 3-fold cross-validation on the training subset for robust hyperparameter tuning.
    - The code builds a DataFrame of image class frequencies, assigns each image to train/validation splits for each fold, and copies the data into fold-specific directories.
 
-3. Final Model Training and Inference Code
+4. Final Model Training and Inference Code
    - Final training code that uses the best hyperparameters from the cross-validation phase to retrain the model on the entire training subset.
    - Inference code that runs on the validation set to generate evaluation metrics (mAP, Precision, Recall, F1-score) and save outputs (predicted bounding boxes with confidence scores).
    - A post-processing module converts YOLO outputs back to original image dimensions for visual comparison.
    - Evaluation and Annotation Conversion
-   - Functions to convert YOLO model predictions to original-scale annotations, which facilitates a detailed analysis (e.g., via confusion matrices).
+   - Functions to convert YOLO model predictions to original-scale annotations
